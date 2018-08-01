@@ -1,6 +1,4 @@
 const express = require('express');
-
-
 const carRouter = require('./src/routes/carRouter');
 let bodyParser = require('body-parser');
 
