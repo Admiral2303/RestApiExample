@@ -5,9 +5,9 @@ let getAllcars = async(req, res) => {
         let query = {};
         if (req.query.brend)
             query.brend = req.query.brend;
-        let books = await Car.find(query);
-        if (books.length > 0)
-            res.json(books);
+        let cars = await Car.find(query);
+        if (cars.length > 0)
+            res.json(cars);
         else
             res.status(404).send({ error: "No cars" });
     } catch (err) {
