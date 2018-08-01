@@ -11,7 +11,7 @@ mongoose.Promise = require('bluebird');
 
 let db;
 if (process.env.ENV === 'Test') {
-    db = mongoose.connect('mongodb://localhost:27017/cars_test', {
+    db = mongoose.connect(process.env.MONGODB_TEST, {
         useNewUrlParser: true
     });
 } else {

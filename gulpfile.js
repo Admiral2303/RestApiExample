@@ -10,7 +10,7 @@ gulp.task('default', () => {
             ext: 'js',
             env: {
                 PORT: 3002,
-                MONGODB_LOCAL: "mongodb://localhost:27017/cars"
+                MONGODB_LOCAL: "mongodb://Test:Test123@ds255260.mlab.com:55260/cars"
             },
             ignore: ['./node_modules/**']
         })

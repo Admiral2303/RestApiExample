@@ -1,4 +1,4 @@
-// let should = require('should');
+process.env.MONGODB_TEST = "mongodb://Test:Test123@ds255260.mlab.com:55260/cars";
 let chai = require('chai');
 let chaiHttp = require('chai-http');
 let request = require('supertest')
